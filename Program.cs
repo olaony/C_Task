@@ -7,3 +7,12 @@
 
 string[] array = new string[7] {"23ytb", "90", "5f", "8mm8", "vvv", "1", "-7"};
 string[] arrayRes = new string [array.Length];
+int count = 0;
+for (int i = 0; i < array.Length; i++)
+    {
+    if(array[i].Length <= 3)
+        {
+        arrayRes[count] = array[i];
+        count++;
+        }
+    }
